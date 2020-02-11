@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {BUTTONS} from "./constants"
 
-const OP_ARR = ["+","-","*","/"]
+const OP_ARR = ["+","-","*","/"];
 class App extends React.Component{
   constructor(props){
     super(props);
@@ -78,11 +78,20 @@ class App extends React.Component{
   handleClick(e){
     this.updateDisplay(e);
   }
+ 
+  componentDidUpdate(){
+    //console.log(document.getElementById("display").value)
+    if(this.state.display.length >14)  //handle display overload
+      this.setState({display:"Error",lastPressed:"=",currEquation:"0"})
+    else if(this.state.display.length >10)
+      document.getElementById("display").style.fontSize= "2.5rem";
+    else
+      document.getElementById("display").style.fontSize= "3.5rem";
+
+  }
   render(){
-    return (<div>
-              <span>{this.state.lastPressed}</span><br/>
-              <span>{this.state.currEquation}</span><br/>
-              <span id="display">{this.state.display}</span><br/>
+    return (<div className="grid-container">
+              <div className="grid-item" id="display" >{this.state.display}</div>
               {BUTTONS.map((val)=><Button id={val.id} key={val.id} value={val.value} type={val.type} display={val.display} handleClick={this.handleClick}/>)}
             </div>);
 
@@ -90,7 +99,7 @@ class App extends React.Component{
 }
 
 const Button = (props)=>{
-return (<button id={props.id} onClick={()=>props.handleClick(props)}>{props.display}</button>);
+return (<button  className={props.type} id={props.id} onClick={()=>props.handleClick(props)}>{props.display}</button>);
 }
 
 export default App;

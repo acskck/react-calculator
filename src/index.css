@@ -12,6 +12,84 @@ code {
     monospace;
 }
 
-#root{
+.grid-container{
+  display:grid;
+  grid-gap:8px 8px;
   text-align: center;
+  height:571px;
+  width:340px;
+  text-align:center;
+  margin:auto;
+  background-color: black;
+  padding: 5px 5px 5px 5px
+
 }
+#display {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  color: white;
+  font-size: 3.5rem;
+  text-align:right;
+  padding:  1rem;
+}
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color:darkgray;
+  color:black
+}
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 50%;
+}
+.NUM, #decimal{
+  
+  background-color:dimgray;
+}
+
+.OP{
+  background-color:goldenrod;
+}
+button {
+  display: inline-block;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 50%;
+}
+
+.OP:hover,
+button:focus {
+  background:gold;
+  outline: none;
+}
+
+.NUM:hover,
+button:focus {
+  background:grey;
+  outline: none;
+}
+
+#decimal:hover,
+button:focus {
+  background:grey;
+  outline: none;
+}
+
+#clear:hover,
+button:focus {
+  background:gainsboro;
+  outline: none;
+}
+

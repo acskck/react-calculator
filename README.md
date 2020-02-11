@@ -1,3 +1,6 @@
+This project was created as part of a fulfilment for front end libraries course in [free code camp](https://www.freecodecamp.org/acskck)
+See this live [here in this Code Pen](https://codepen.io/acskck/pen/wvaaONW)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

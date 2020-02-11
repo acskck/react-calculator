@@ -1,58 +1,33 @@
 export const BUTTONS = [{
-    id:"add",
-    value:'+',
+    id:"clear",
+    value:'AC',
     type:"OP",
-    display:'+'
-    },{
-    id:"subtract",
-    value:'-',
-    type:"OP",
-    display:'-'
-    },{
-    id:"multiply",
-    value:'*',
-    type:"OP",
-    display:'X'
+    display:'AC'
     },{
     id:"divide",
     value:'/',
     type:"OP",
     display:'/'
     },{
-    id:"equals",
-    value:'=',
+    id:"seven",
+    value:'7',
+    type:"NUM",
+    display:'7'
+    },{
+    id:"eight",
+    value:'8',
+    type:"NUM",
+    display:'8'
+    },{
+    id:"nine",
+    value:'9',
+    type:"NUM",
+    display:'9'
+    },{
+    id:"multiply",
+    value:'*',
     type:"OP",
-    display:'='
-    },{
-    id:"decimal",
-    value:'.',
-    type:"OP",
-    display:'.'
-    },{
-    id:"clear",
-    value:'AC',
-    type:"OP",
-    display:'AC'
-    },{
-    id:"zero",
-    value:'0',
-    type:"NUM",
-    display:'0'
-    },{
-    id:"one",
-    value:'1',
-    type:"NUM",
-    display:'1'
-    },{
-    id:"two",
-    value:'2',
-    type:"NUM",
-    display:'2'
-    },{
-    id:"three",
-    value:'3',
-    type:"NUM",
-    display:'3'
+    display:'X'
     },{
     id:"four",
     value:'4',
@@ -69,18 +44,43 @@ export const BUTTONS = [{
     type:"NUM",
     display:'6'
     },{
-    id:"seven",
-    value:'7',
-    type:"NUM",
-    display:'7'
+    id:"subtract",
+    value:'-',
+    type:"OP",
+    display:'-'
     },{
-    id:"eight",
-    value:'8',
+    id:"one",
+    value:'1',
     type:"NUM",
-    display:'8'
+    display:'1'
     },{
-    id:"nine",
-    value:'9',
+    id:"two",
+    value:'2',
     type:"NUM",
-    display:'9'
+    display:'2'
+    },{
+    id:"three",
+    value:'3',
+    type:"NUM",
+    display:'3'
+    },{
+    id:"add",
+    value:'+',
+    type:"OP",
+    display:'+'
+    },{
+    id:"zero",
+    value:'0',
+    type:"NUM",
+    display:'0'
+    },{
+    id:"decimal",
+    value:'.',
+    type:"OP",
+    display:'.'
+    },{
+    id:"equals",
+    value:'=',
+    type:"OP",
+    display:'='
     }];
